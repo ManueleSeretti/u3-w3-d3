@@ -39,20 +39,20 @@ var studente1 = {
     materia: "matematica",
     mediaVoti: 8,
 };
-// grazie al Generic il tipo di "topic" viene deciso al momento dell'utilizzo dell'interfaccia
-// qui possiamo stabilire un qualsiasi tipo di valore per caso specifico
+// in questo modo il topic potra assumere ogni volta un tipo di valore diverso
+//che sarà comunque dichiarato nel parametro al momento dell'utilizzo dell'interfaccia,
+//  in questo caso sarà una stringa:
 var U1 = {
     name: "Unit1",
     assignedTeacher: "Stefano Miceli",
-    //   topic: "HTML, CSS, JS I, JS II, BW1"
     topic: "HTML",
 };
+// in questo caso sarà un arrey di stringhe:
 var U2 = {
     name: "Unit2",
     assignedTeacher: "Stefano Miceli",
     topic: ["UX", "CSS", "Framework", "SASS", "JS III", "BW2"],
 };
-// const U3: EpicodeUnit<{weeklyTopics: string[]}[]> = {
 var U3 = {
     name: "Unit3",
     assignedTeacher: "Stefano Miceli",
